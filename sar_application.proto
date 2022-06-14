@@ -26,6 +26,7 @@ message SAR_ReconstructTime_Response{
     float param2 = 6;//扩展用
 };
 
+// 对外提供接口：sh李老师调用
 service SAR {
     rpc SAR_Open_Interface(SAR_Open_Request) returns (SAR_Open_Response);
     rpc SAR_Close_Interface(SAR_Close_Request) returns (SAR_Close_Response);
@@ -41,6 +42,7 @@ message ReconstructTimeResponse{
     float time = 1;
 };
 
+// 作为服务调用方调用dsp_agent
 service DSPController{
     rpc LoadSarApp(DSPControllerRequest) returns (DSPControllerResponse);
     rpc StartSarApp(DSPControllerRequest) returns (DSPControllerResponse);
@@ -72,6 +74,7 @@ message Feature_Etraction_Response{
     
 }
 //SAR图形处理服务   
+// 作为调用方，具体实现西电张亚聪
 service  SAR_iamge_processing_service{
     
     /**

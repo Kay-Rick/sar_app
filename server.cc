@@ -70,7 +70,7 @@ public:
 		#if 0
 
 
-
+		// 测试需在开发板上进行，实际调用西电方接口
 		Log(NOTICE,"Step 3 start sar!");
 		//3. start sar
 		client.StartSarApp(&req, &resp, &target_Location_synctx);
