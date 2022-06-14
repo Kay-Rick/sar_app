@@ -1,0 +1,9 @@
+{
+    "REGISTRY_CENTER":"192.168.1.119:8500",
+	"dsp_agent_name":"DSP_agent",
+    "sar_arm_name":"SAR_metaservice",
+    "sar_name":"SAR_metaApp",
+    "sar_port":5100,
+    "check_health_port":5200,
+    "is_regist_service": 1
+}
